@@ -4,9 +4,9 @@
  * @returns {Float32Array}
  */
 function Q_rsqrt(number) {
-    // The Q_rsqrt function needs to perform a "right shift bit".
-    // A "right shift bit" consists in shifting a binary value from left to right (or viceversa).
-    // In order to be able to perform a "right shift bit" we need to use binary data buffer.
+    // The Q_rsqrt function needs to perform a "right bit-shift".
+    // A "right bit-shift" consists in shifting a binary value from left to right (or viceversa).
+    // In order to be able to perform a "right bit-shift" we need to use binary data buffer.
 
     // So we create the buffer:
     var buffer = new ArrayBuffer(Float32Array.BYTES_PER_ELEMENT);
@@ -16,8 +16,8 @@ function Q_rsqrt(number) {
     var y = new Float32Array(buffer);
 
     // Now we create a new "typed array" representing a 32-bit unsigned integer.
-    // This object will allow us to perform the "right shift bit",
-    // because shift bit in Javascript only works on unsigned/signed integers.
+    // This object will allow us to perform the "right bit-shift",
+    // because right/left bit-shift only works on unsigned/signed integers.
     // We're gonna use an unsigned integer because Q_rsqrt accepts positive and negative numbers.
 
     // This new object will share the same buffer of y.
