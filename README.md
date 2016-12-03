@@ -8,6 +8,8 @@ Fast inverse square root, sometimes referred to as Fast InvSqrt() or by the hexa
 
 [Complete Wikipedia article](https://en.wikipedia.org/wiki/Fast_inverse_square_root)
 
+The algorithm is best known for its implementation in the source code of Quake III Arena to compute angles of incidence and reflection of the light.
+
 ---
 
 How to use:
