@@ -1,5 +1,5 @@
 # Q_rsqrtJS
-#####This is a simple JavaScript implementation of the Fast inverse square root.
+##### This is a simple JavaScript implementation of the Fast inverse square root.
 
 Fast inverse square root, sometimes referred to as Fast InvSqrt() or by the hexadecimal constant 0x5f3759df, is an algorithm that estimates 1/√x, the reciprocal (or multiplicative inverse) of the square root of a 32-bit floating-point number x in IEEE 754 floating-point format.
 
